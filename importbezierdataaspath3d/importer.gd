@@ -29,9 +29,9 @@ func clicked():
 			# since we made the exporter, we can expect a specific order in each array entry
 			# so in this case its okay to just hardcode our array indexes
 			# (ideally id put them in keys anyways but this has taken long enough to do as is)\
-			var start = Vector3(parsed[n][0], parsed[n][2], parsed[n][1])
-			var in_p = Vector3(parsed[n][3], parsed[n][5], parsed[n][4])
-			var out_p = Vector3(parsed[n][6], parsed[n][8], parsed[n][7])
+			var start = Vector3(-parsed[n][0], parsed[n][2], parsed[n][1])
+			var in_p = Vector3(-parsed[n][3], parsed[n][5], parsed[n][4])
+			var out_p = Vector3(-parsed[n][6], parsed[n][8], parsed[n][7])
 			
 			curve.add_point(start, start - in_p, start - out_p)
 		
