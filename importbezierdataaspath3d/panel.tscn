@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtkgar0da1c4s"]
+
+[ext_resource type="Script" uid="uid://dhl36wohcm1lf" path="res://addons/importbezierdataaspath3d/importer.gd" id="1_p776k"]
+
+[node name="BezierImporter" type="VBoxContainer"]
+offset_right = 284.0
+offset_bottom = 355.0
+script = ExtResource("1_p776k")
+
+[node name="text" type="TextEdit" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "Paste exported data here..."
+
+[node name="ok" type="Button" parent="."]
+layout_mode = 2
+text = "OK!"
